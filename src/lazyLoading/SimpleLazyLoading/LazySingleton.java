@@ -5,7 +5,7 @@ public class LazySingleton {
 
     private LazySingleton() {} //private constructor so that object can't be created with the new keyword
 
-    public LazySingleton getInstance() {
+    public static LazySingleton getInstance() {
         if(instance == null) { //only first time the instance is created.
             instance = new LazySingleton();
         }
